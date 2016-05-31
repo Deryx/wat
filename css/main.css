@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container > header {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 100%;
+    height: 82px;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+}
+
+.container > header > img {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.container > header > nav {
+    margin: 0;
+    padding: 0 0 0 150px;
+}
+
+.container > header > nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container > header > nav > ul > li {
+    display: inline-table;
+    text-align: center;
+    width: 125px;
+    height: 72px;
+}
+
+.container > header > nav > ul > li > a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 90%;
+    text-transform: uppercase;
+    display: block;
+    padding: 27px 0 26px 0;
+    color: rgb(215, 184, 39);
+}
+
+.container > header > nav > ul > li > a:hover {
+    background: rgb(252, 104, 23);
+    color: rgb(86, 86, 255);
+}
+
+.container > section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 30px;
+}
+
+.container > section > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.container > .marquee {
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-image: url(../images/marquee.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.container > .marquee > h1 {
+    padding-top: 190px;
+    padding-left: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 400%;
+    text-align: left;
+}
+
+.container > .marquee > h1 > br {
+    line-height: 10;
+}
+
+.container > .marquee > h1 > span {
+    margin-left: 150px;
+}
+
+.container > .programs > .row {
+    margin: 0 auto;
+    width: 990px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container > .programs > .row > article {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #CCC;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 20px;
+
+}
+
+.container > .programs > article > h2 {
+    text-align: center;
+}
+
+.container > footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 72px;
+    background: rgb(232,169,36);
+    text-align: center;
+}
+
+#site-overlay {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    display: none;
+}
+
+#site-overlay > h1 {
+    float: right;
+    color: #FFF;
+    margin: -80px 20px 0 0;
+    font-size: 125%;
+    color: rgba(240, 240, 240, 0.5);
+}
+
+#site-overlay > h1:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+[id*=lightbox] {
+    position: absolute;
+    float: left;
+    width: 700px;
+    height: 700px;
+    margin-top: -350px;
+    margin-left: -350px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    background: #FFF;
+    display: none;
+}
+
