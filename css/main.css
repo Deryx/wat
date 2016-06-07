@@ -4,6 +4,11 @@ body {
     width: 100%;
 }
 
+p, address {
+	font-family: "Roboto Slab", serif;
+	font-size: 110%;
+}
+
 .container {
     margin: 0;
     padding: 0;
@@ -78,7 +83,8 @@ body {
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container > .marquee {
@@ -111,29 +117,60 @@ body {
     margin-left: 150px;
 }
 
-.container > .programs > .row {
+.container > section > article {
     margin: 0 auto;
-    width: 990px;
-    display: flex;
-    flex-direction: row;
-}
-
-.container > .programs > .row > article {
-    margin: 0;
     padding: 0;
-    width: 200px;
-    height: 250px;
-    border: 1px solid #CCC;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    margin: 20px;
-
+    width: 990px;
 }
 
-.container > .programs > article > h2 {
-    text-align: center;
+.container > .about > article > p {
+    margin-bottom: 50px;
+}
+
+.container > .contact > article {
+	text-align: center;
+}
+
+.container > .contact > article > div {
+	font-size: 4em;
+	margin: 15px;
+}
+
+.container > .contact > article > div > a {
+    color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+
+.container > .contact > article > div > a:hover {
+    color: rgb(232, 169, 36);
+	text-decoration: none;
+}
+
+.container > .bio > article > div {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.container > .bio > article > div > div:nth-of-type(1) {
+	flex-grow: 1;
+	float: left;
+}
+
+.container > .bio > article > div > div:nth-of-type(2) {
+	flex-grow: 3;
+	margin-left: 20px;
+	float: right;
+}
+
+.container > .bio > article > div > div:nth-of-type(2) > p {
+	line-height: 1.5;
+	text-align: justify;
+	font-size: 102%;
 }
 
 .container > footer {
