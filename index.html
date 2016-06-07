@@ -28,19 +28,19 @@
 
 		<nav>
 			<ul>
-				<li><a href="">home</a></li>
-				<li><a href="">about</a></li>
-				<li><a href="">ajarn phil nurse</a></li>
-				<li><a href="">videos</a></li>
+				<li><a href="#home">home</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#bio">ajarn phil nurse</a></li>
+				<li><a href="#videos">videos</a></li>
 				<li><a href="">testimonials</a></li>
 				<li><a href="">membership</a></li>
 				<li><a href="">gear</a></li>
-				<li><a href="">contact</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 		</nav>
     </header>
 
-    <section class="marquee">
+    <section class="marquee" id="home">
         <h1>
             Ajarn Phil Nurse
             <br>
@@ -48,12 +48,21 @@
         </h1>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <h1>about</h1>
+
+        <article>
+            <blockquote>
+                &ldquo;KruPhilosophy is the mental component of my Muay Thai style, Wat is my laboratory where I perfect it, life is it’s application.&rdquo;
+                <div>&ndash; Ajarn Kru Phil Nurse</div>
+            </blockquote>
+
+            <p><strong>KruPhilosophy</strong>, coined by <strong>UFC Light Heavy Weight Champion Jon Jones</strong> during a conversation after a training session, has been a way of life for Ajarn Phil for over 30 years. Initially, It wasn’t something that was consciously taught to students, rather it transferred organically as the student teacher relationship developed and evolved. It was surprising to Ajarn Phil that Jon was so perceptive at such a very young age to recognize the mental aspects involved in his subtle style of teaching. His primary goal has always been to arm students with the tools to help them be their best possible self by preparing them not only for a physical fight, but most importantly preparing them for the battles they will encounter outside of the ring.</p>
+        </article>
 
     </section>
 
-    <section class="bio">
+    <section class="bio" id="bio">
         <h1>ajarn phil nurse</h1>
 
         <article>
@@ -80,16 +89,16 @@
         </article>
     </section>
 
-    <section class="videos">
+    <section class="videos" id="videos">
         <h1>videos</h1>
 
     </section>
 	
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1>contact</h1>
 		
 		<article>
-			<h2>Headquarters</h2>
+			<h2>Headquarters:</h2>
 			<address>
 				<h3>The Wat</h3>
 				291 Broadway (lower level)<br>
@@ -108,7 +117,7 @@
     </section>
 
     <footer>
-        &copy;
+        <div>&copy; All Rights Reserved</div>
     </footer>
 </div>
 
@@ -119,13 +128,18 @@
 
     <!-- Lightboxes -->
     <div id="video-lightbox">
-        <section>
+        <video width="700" controls>
+            <source src="videos/The.Art.Intro.mp4" type="video/mp4">
 
-        </section>
+            <source src="videos/The.Art.Intro.ogv" type="video/ogg">
+
+            "Your browser does not support the video tag."
+        </video>
     </div>
 
     <!-- Javascript -->
     <script src="plugins/lightbox.js"></script>
+    <script src="plugins/linkscroll.js"></script>
     <script src="scripts/application.js"></script>
 </body>
 </html>

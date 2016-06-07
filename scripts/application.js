@@ -4,6 +4,7 @@
 
 $(function() {
     $( 'body' ).showlightbox();
+    $( '#video-lightbox').fadeIn();
 
     $('header > nav > ul > li > a[href^="#"]').on('click', function(e) {
         e.preventDefault();
